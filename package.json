@@ -1,6 +1,6 @@
 {
   "name": "gatsby-starter-mui-context-auth0",
-  "version": "4.0.0",
+  "version": "1.0.0",
   "private": true,
   "author": "Kevin Flanagan <kevin@kflan.io>",
   "dependencies": {
@@ -9,9 +9,12 @@
     "gatsby": "latest",
     "gatsby-plugin-material-ui": "latest",
     "gatsby-plugin-react-helmet": "latest",
+    "prop-types": "^15.7.2",
     "react": "latest",
+    "react-async": "^10.0.0",
     "react-dom": "latest",
-    "react-helmet": "latest"
+    "react-helmet": "latest",
+    "react-use-auth": "^0.5.3"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
@@ -23,5 +26,9 @@
     "clean": "gatsby clean",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  }
+  },
+  "description": "Gatsby Starter App with Material-UI, Context, and Auth0",
+  "main": "index.js",
+  "repository": "https://github.com/kflan-io/gatsby-starter-mui-context-auth0.git",
+  "license": "MIT"
 }
