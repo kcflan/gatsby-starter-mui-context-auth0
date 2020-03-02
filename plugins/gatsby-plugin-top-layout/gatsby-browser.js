@@ -10,14 +10,14 @@ const clientID = process.env.AUTH0_CLIENTID;
 
 export const wrapRootElement = ({ element }) => {
   return (
-    <TopLayout>
-      <AuthProvider
-        navigate={navigate}
-        auth0_domain={domain}
-        auth0_client_id={clientID}
-      >
-        <UserProvider>{element}</UserProvider>
-      </AuthProvider>
-    </TopLayout>
+    <AuthProvider
+      navigate={navigate}
+      auth0_domain={domain}
+      auth0_client_id={clientID}
+    >
+      <UserProvider>
+        <TopLayout>{element}</TopLayout>
+      </UserProvider>
+    </AuthProvider>
   );
 };

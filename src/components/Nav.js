@@ -1,13 +1,13 @@
 import React from 'react';
 import { useAuth } from 'react-use-auth';
-// import { useUser } from '../context/userContext';
+import { useUser } from '../context/userContext';
 
 const Nav = () => {
-  //   const { isAuthenticated, login, logout } = useAuth();
-  const { isAuthenticated, login, logout, user } = useAuth();
-  console.log('user: ', user);
+  const { isAuthenticated, login, logout } = useAuth();
+  //   const { isAuthenticated, login, logout, user } = useAuth();
 
-  //   const user = useUser();
+  const user = useUser();
+
   return (
     <>
       <p>hello world: {user.name}</p>

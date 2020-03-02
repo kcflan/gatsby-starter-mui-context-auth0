@@ -6,6 +6,7 @@ const UserContext = React.createContext();
 
 function UserProvider(props) {
   const { user } = useAuth();
+  console.log('user userContext: ', user);
 
   const [firstAttemptFinished, setFirstAttemptFinished] = React.useState(false);
 
